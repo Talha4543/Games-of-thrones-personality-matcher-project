@@ -1,2 +1,2 @@
-# game-of-thrones-personality-matcher
-A t-sne implementation on GOT dataset
+# Games-of-thrones-personality-matcher
+![image alt]("
