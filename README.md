@@ -1,1 +1,2 @@
-# Games-of-thrones-personality-matcher-project
+# game-of-thrones-personality-matcher
+A t-sne implementation on GOT dataset
