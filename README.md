@@ -56,10 +56,6 @@ Open in your browser:
 
 Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   http://localhost:8501   `
 
-📊 Example Code (app.py)
-------------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   import streamlit as st  import requests  import pandas as pd  # Fetch data directly from ThronesAPI  api_data = requests.get("https://thronesapi.com/api/v2/Characters").json()  # Convert JSON into DataFrame  df = pd.DataFrame(api_data)  # Keep only first 25 characters  df = df.head(25)  # Clean character names for consistency  df['fullName'] = df['fullName'].str.replace('Jaime', 'Jamie')  df['fullName'] = df['fullName'].str.replace('Lord Varys', 'Varys')  # Streamlit UI  st.title("🐉 Game of Thrones Personality Matcher")  st.write("### Available Characters")  st.dataframe(df[['fullName', 'title', 'family']])  # Dropdown to select a character  character = st.selectbox("Choose a character", df['fullName'])  # Show selected character  st.write(f"You selected: **{character}**")   `
 
 📦 Requirements (requirements.txt)
 ----------------------------------
